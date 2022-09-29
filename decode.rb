@@ -1,5 +1,4 @@
-@morse_chars = {
-  '.-' => 'A',
+@morse_chars = { '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
   '-..' => 'D',
@@ -36,7 +35,7 @@ end
 def decode_word(morse_word)
   word = ''
   word_splitted = morse_word.split
-  word_splitted.each { |char| word = word + decode_char(char) }
+  word_splitted.each { |char| word += decode_char(char) }
   word
 end
 
